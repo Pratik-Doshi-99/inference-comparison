@@ -1,0 +1,40 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Load Test Monitor</title>
+    <link rel="stylesheet" href="/analyze/static/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Load Testing Dashboard</h1>
+        
+        <div class="controls">
+            <button onclick="toggleTest()" id="startButton">Start New Test</button>
+            <button onclick="killTest()" id="killButton" style="background-color: #dc3545;">Stop Test</button>
+            <div id="configForm" style="display:none;">
+                <input type="text" id="testName" placeholder="Test Name">
+                <input type="number" id="duration" placeholder="Duration (seconds)">
+                <button onclick="startTest()">Confirm</button>
+            </div>
+        </div>
+
+        <div class="metrics">
+            <div class="chart-container">
+                <canvas id="latencyChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="throughputChart"></canvas>
+            </div>
+        </div>
+
+        <div class="archived">
+            <h2>Archived Tests</h2>
+            <ul id="archivedList"></ul>
+        </div>
+    </div>
+
+    <script src="/analyze/static/js/script.js"></script>
+</body>
+</html>

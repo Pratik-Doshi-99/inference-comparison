@@ -1,0 +1,64 @@
+/* static/css/style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 8px 16px;
+    margin: 5px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.chart-container {
+    margin: 20px 0;
+    padding: 15px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.archived {
+    margin-top: 30px;
+}
+
+#archivedList {
+    list-style: none;
+    padding: 0;
+}
+
+#archivedList li {
+    padding: 8px;
+    margin: 4px 0;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#archivedList li:hover {
+    background: #e9ecef;
+}
