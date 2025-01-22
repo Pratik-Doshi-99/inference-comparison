@@ -1,0 +1,8 @@
+server_type: triton
+api_endpoint: "http://localhost:8000/v2/models/ensemble/infer"
+users: 10
+ramp_up: 5
+duration: 60
+request_timeout: 120
+requests_file: "requests/triton.json"
+verbose: true

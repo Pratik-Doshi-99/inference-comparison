@@ -1,0 +1,72 @@
+[
+  {
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "prompt": "Explain quantum computing in simple terms",
+    "max_tokens": 200,
+    "stream": true,
+    "temperature": 0.7
+  },
+  {
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "prompt": "Write a poem about artificial intelligence",
+    "max_tokens": 200,
+    "stream": true,
+    "temperature": 0.7
+  },
+  {
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "prompt": "How does photosynthesis work?",
+    "max_tokens": 200,
+    "stream": true,
+    "temperature": 0.7
+  },
+  {
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "prompt": "Write a short story on Cristiano Ronaldo.",
+    "max_tokens": 200,
+    "stream": true,
+    "temperature": 0.7
+  },
+  {
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "prompt": "Write a short description of artificial neural networks.",
+    "max_tokens": 200,
+    "stream": true,
+    "temperature": 0.7
+  },
+  {
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "prompt": "Write a short description of Convolutional Neural Networks.",
+    "max_tokens": 200,
+    "stream": true,
+    "temperature": 0.7
+  },
+  {
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "prompt": "Write a short description of the transformer architecture in neural networks.",
+    "max_tokens": 200,
+    "stream": true,
+    "temperature": 0.7
+  },
+  {
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "prompt": "Write a short description of diffusion models.",
+    "max_tokens": 200,
+    "stream": true,
+    "temperature": 0.7
+  },
+  {
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "prompt": "Write a short description of recommendation systems using neural networks.",
+    "max_tokens": 200,
+    "stream": true,
+    "temperature": 0.7
+  },
+  {
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "prompt": "Explain double descent in neural networks.",
+    "max_tokens": 200,
+    "stream": true,
+    "temperature": 0.7
+  }
+]

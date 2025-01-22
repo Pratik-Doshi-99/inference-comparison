@@ -1,0 +1,122 @@
+[
+    {
+      "model_name": "ensemble",
+      "inputs": [
+        {
+          "name": "PROMPT",
+          "shape": [1],
+          "datatype": "BYTES",
+          "data": ["Explain quantum computing in simple terms"]
+        }
+      ],
+      "parameters": {"max_tokens": 200}
+    },
+    {
+      "model_name": "ensemble",
+      "inputs": [
+        {
+          "name": "PROMPT",
+          "shape": [1],
+          "datatype": "BYTES",
+          "data": ["Write a poem about artificial intelligence"]
+        }
+      ],
+      "parameters": {"max_tokens": 200}
+    },
+    {
+      "model_name": "ensemble",
+      "inputs": [
+        {
+          "name": "PROMPT",
+          "shape": [1],
+          "datatype": "BYTES",
+          "data": ["How does photosynthesis work?"]
+        }
+      ],
+      "parameters": {"max_tokens": 200}
+    },
+    {
+      "model_name": "ensemble",
+      "inputs": [
+        {
+          "name": "PROMPT",
+          "shape": [1],
+          "datatype": "BYTES",
+          "data": ["Write a short story on Cristiano Ronaldo."]
+        }
+      ],
+      "parameters": {"max_tokens": 200}
+    },
+    {
+      "model_name": "ensemble",
+      "inputs": [
+        {
+          "name": "PROMPT",
+          "shape": [1],
+          "datatype": "BYTES",
+          "data": ["Write a short description of artificial neural networks."]
+        }
+      ],
+      "parameters": {"max_tokens": 200}
+    },
+    {
+      "model_name": "ensemble",
+      "inputs": [
+        {
+          "name": "PROMPT",
+          "shape": [1],
+          "datatype": "BYTES",
+          "data": ["Write a short description of Convolutional Neural Networks."]
+        }
+      ],
+      "parameters": {"max_tokens": 200}
+    },
+    {
+      "model_name": "ensemble",
+      "inputs": [
+        {
+          "name": "PROMPT",
+          "shape": [1],
+          "datatype": "BYTES",
+          "data": ["Write a short description of the transformer architecture in neural networks."]
+        }
+      ],
+      "parameters": {"max_tokens": 200}
+    },
+    {
+      "model_name": "ensemble",
+      "inputs": [
+        {
+          "name": "PROMPT",
+          "shape": [1],
+          "datatype": "BYTES",
+          "data": ["Write a short description of diffusion models."]
+        }
+      ],
+      "parameters": {"max_tokens": 200}
+    },
+    {
+      "model_name": "ensemble",
+      "inputs": [
+        {
+          "name": "PROMPT",
+          "shape": [1],
+          "datatype": "BYTES",
+          "data": ["Write a short description of recommendation systems using neural networks."]
+        }
+      ],
+      "parameters": {"max_tokens": 200}
+    },
+    {
+      "model_name": "ensemble",
+      "inputs": [
+        {
+          "name": "PROMPT",
+          "shape": [1],
+          "datatype": "BYTES",
+          "data": ["Explain double descent in neural networks."]
+        }
+      ],
+      "parameters": {"max_tokens": 200}
+    }
+  ]

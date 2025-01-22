@@ -1,0 +1,72 @@
+[
+    {
+      "inputs": "Explain quantum computing in simple terms",
+      "parameters": {
+        "max_new_tokens": 200,
+        "details": true
+      }
+    },
+    {
+      "inputs": "Write a poem about artificial intelligence",
+      "parameters": {
+        "max_new_tokens": 200,
+        "details": true
+      }
+    },
+    {
+      "inputs": "How does photosynthesis work?",
+      "parameters": {
+        "max_new_tokens": 200,
+        "details": true
+      }
+    },
+    {
+      "inputs": "Write a short story on Cristiano Ronaldo.",
+      "parameters": {
+        "max_new_tokens": 200,
+        "details": true
+      }
+    },
+    {
+      "inputs": "Write a short description of artificial neural networks.",
+      "parameters": {
+        "max_new_tokens": 200,
+        "details": true
+      }
+    },
+    {
+      "inputs": "Write a short description of Convolutional Neural Networks.",
+      "parameters": {
+        "max_new_tokens": 200,
+        "details": true
+      }
+    },
+    {
+      "inputs": "Write a short description of the transformer architecture in neural networks.",
+      "parameters": {
+        "max_new_tokens": 200,
+        "details": true
+      }
+    },
+    {
+      "inputs": "Write a short description of diffusion models.",
+      "parameters": {
+        "max_new_tokens": 200,
+        "details": true
+      }
+    },
+    {
+      "inputs": "Write a short description of recommendation systems using neural networks.",
+      "parameters": {
+        "max_new_tokens": 200,
+        "details": true
+      }
+    },
+    {
+      "inputs": "Explain double descent in neural networks.",
+      "parameters": {
+        "max_new_tokens": 200,
+        "details": true
+      }
+    }
+  ]

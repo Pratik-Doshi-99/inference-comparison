@@ -1,0 +1,8 @@
+server_type: tgi
+api_endpoint: "http://localhost:8080/generate"
+users: 10
+ramp_up: 5
+duration: 60
+request_timeout: 120
+requests_file: "requests/tgi.json"
+verbose: true
