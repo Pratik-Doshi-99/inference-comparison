@@ -248,15 +248,17 @@ async def stream_processor(response, request_start, config):
     return ttft, tokens, inter_token_latencies, None, full_response
 
 async def user_loop(session, user_id, requests, start_time, test_duration, metrics, metrics_lock, config):
-    current_idx = 0
+    start_idx = int(user_id / config['users'] * len(requests))
     #user_id = id(session)
-    
-    print(f"[{datetime.now().isoformat()}] User {user_id} started")
+    current_idx = start_idx
+    end_idx = min(int((user_id + 1) / config['users'] * len(requests)), len(requests))
+    print(f"[{datetime.now().isoformat()}] User {user_id} starting at {start_idx}")
     
     while time.time() - start_time < test_duration:
-        request_data = requests[current_idx % len(requests)]
-        current_idx += 1
-        
+        if current_idx >= end_idx:
+            current_idx = start_idx
+        request_data = requests[current_idx]
+        print(f'User {user_id} picking request #{current_idx}')
         # Extract prompt based on server type
         if config['server_type'] == 'triton':
             prompt = request_data['inputs'][0]['data'][0]
@@ -317,6 +319,7 @@ async def user_loop(session, user_id, requests, start_time, test_duration, metri
         
         async with metrics_lock:
             metrics.append(metric)
+        current_idx += 1
 
 def log_metrics(metrics):
     if not metrics:
