@@ -1,0 +1,92 @@
+[2025-01-23T06:45:41.582427] Starting load test
+[2025-01-23T06:45:41.582436] Configuration: {
+  "server_type": "vllm",
+  "api_endpoint": "http://localhost:8000/v1/completions",
+  "users": 50,
+  "ramp_up": 20,
+  "duration": 300,
+  "request_timeout": 120,
+  "requests_file": "requests/vllm.json",
+  "verbose": false
+}
+[2025-01-23T06:45:41.582621] Spawning 50 users over 20s
+[2025-01-23T06:45:41.582684] User 0 started
+[2025-01-23T06:45:41.983651] User 1 started
+[2025-01-23T06:45:42.784043] User 2 started
+[2025-01-23T06:45:43.984279] User 3 started
+[2025-01-23T06:45:45.585018] User 4 started
+[2025-01-23T06:45:47.585740] User 5 started
+[2025-01-23T06:45:49.987187] User 6 started
+[2025-01-23T06:45:52.788013] User 7 started
+[2025-01-23T06:45:55.988714] User 8 started
+[2025-01-23T06:45:59.589672] User 9 started
+[2025-01-23T06:46:03.590290] User 10 started
+[2025-01-23T06:46:07.990703] User 11 started
+[2025-01-23T06:46:12.791064] User 12 started
+[2025-01-23T06:46:17.991630] User 13 started
+[2025-01-23T06:46:23.591942] User 14 started
+[2025-01-23T06:46:29.593981] User 15 started
+[2025-01-23T06:46:35.994409] User 16 started
+[2025-01-23T06:46:42.795337] User 17 started
+[2025-01-23T06:46:49.996340] User 18 started
+[2025-01-23T06:46:57.597246] User 19 started
+[2025-01-23T06:47:05.597879] User 20 started
+[2025-01-23T06:47:13.999035] User 21 started
+[2025-01-23T06:47:22.800118] User 22 started
+[2025-01-23T06:47:32.001291] User 23 started
+[2025-01-23T06:47:41.601904] User 24 started
+[2025-01-23T06:47:51.602294] User 25 started
+[2025-01-23T06:48:02.002762] User 26 started
+[2025-01-23T06:48:12.803737] User 27 started
+[2025-01-23T06:48:24.005909] User 28 started
+[2025-01-23T06:48:35.606592] User 29 started
+[2025-01-23T06:48:47.607106] User 30 started
+[2025-01-23T06:49:00.007491] User 31 started
+[2025-01-23T06:49:12.807902] User 32 started
+[2025-01-23T06:49:26.008975] User 33 started
+[2025-01-23T06:49:39.609410] User 34 started
+[2025-01-23T06:49:53.611257] User 35 started
+[2025-01-23T06:50:08.013301] User 36 started
+[2025-01-23T06:50:22.814274] User 37 started
+[2025-01-23T06:50:38.016026] User 38 started
+[2025-01-23T06:50:53.617793] User 39 started
+[2025-01-23T06:51:09.618288] User 40 started
+[2025-01-23T06:51:26.027591] User 41 started
+[2025-01-23T06:51:42.836402] User 42 started
+[2025-01-23T06:52:00.042733] User 43 started
+[2025-01-23T06:52:17.660440] User 44 started
+[2025-01-23T06:52:35.675238] User 45 started
+[2025-01-23T06:52:54.084031] User 46 started
+[2025-01-23T06:53:12.889631] User 47 started
+[2025-01-23T06:53:32.109051] User 48 started
+[2025-01-23T06:53:51.712144] Load test running for 300s
+[2025-01-23T06:53:51.712185] User 49 started
+[2025-01-23T06:53:51.712192] Stopping test
+[2025-01-23T06:53:51.712548] Generating report
+
+==================== Load Test Results =====================
+Total Requests:           289
+Successful Requests:      289
+Failed Requests:          0
+Test Duration:            300.00s
+Requests/sec:             0.96
+
+---------------- Time to First Token (TTFT) ----------------
+Average:             0.2827s
+95th %ile:           0.3605s
+99th %ile:           0.3632s
+
+--------------------- Token Throughput ---------------------
+Average:             6.88 tokens/s
+95th %ile:           7.03 tokens/s
+
+------------------- Inter-Token Latency --------------------
+Average:             0.1450s
+95th %ile:           0.1469s
+
+--------------------- Request Duration ---------------------
+Average:             29.0797s
+95th %ile:           29.5247s
+[2025-01-23T06:53:51.713114] Saving metrics to metrics_20250123_065351.csv
+[2025-01-23T06:53:51.717146] Saving prompt/response pairs to prompt_response_20250123_065351.jsonl
+[2025-01-23T06:53:51.724575] Test complete

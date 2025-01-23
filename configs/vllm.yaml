@@ -1,8 +1,8 @@
 server_type: vllm
 api_endpoint: "http://localhost:8000/v1/completions"
-users: 10
-ramp_up: 5
-duration: 120
+users: 50
+ramp_up: 20
+duration: 300
 request_timeout: 120
 requests_file: "requests/vllm.json"
 verbose: false
