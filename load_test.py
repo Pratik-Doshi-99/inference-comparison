@@ -247,9 +247,9 @@ async def stream_processor(response, request_start, config):
     
     return ttft, tokens, inter_token_latencies, None, full_response
 
-async def user_loop(session, requests, start_time, test_duration, metrics, metrics_lock, config):
+async def user_loop(session, user_id, requests, start_time, test_duration, metrics, metrics_lock, config):
     current_idx = 0
-    user_id = id(session)
+    #user_id = id(session)
     
     print(f"[{datetime.now().isoformat()}] User {user_id} started")
     
@@ -368,7 +368,7 @@ async def main(config):
             await asyncio.sleep(spawn_delay)
             
             task = asyncio.create_task(
-                user_loop(session, requests, start_time, config['duration'], metrics, metrics_lock, config)
+                user_loop(session, user_id, requests, start_time, config['duration'], metrics, metrics_lock, config)
             )
             tasks.append(task)
         
@@ -389,7 +389,7 @@ async def main(config):
 # generate_report() and calculate_percentile() remain unchanged from previous version
 
 if __name__ == "__main__":
-    with open("/home/srmdadmin/vLLM_dep/tests/LLM_Load_Test/configs/vllm.yaml") as f:
+    with open("/home/srmdadmin/LLM_Inference/tests/inference-comparison/configs/vllm.yaml") as f:
         config = yaml.safe_load(f)
     
     config.setdefault('verbose', False)
