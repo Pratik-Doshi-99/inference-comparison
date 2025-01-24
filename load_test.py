@@ -279,8 +279,7 @@ async def user_loop(session, user_id, requests, start_time, test_duration, metri
             'error': None
         }
         
-        request_start = time.time()
-        metric['timestamp'] = request_start
+        
         
         if config.get('verbose', False):
             print(f"[{datetime.now().isoformat()}] User {user_id} sending request: {json.dumps(request_data)}")
@@ -291,6 +290,8 @@ async def user_loop(session, user_id, requests, start_time, test_duration, metri
                 json=request_data,
                 timeout=aiohttp.ClientTimeout(total=config.get('request_timeout', 300))
             ) as response:
+                request_start = time.time()
+                metric['timestamp'] = request_start
                 ttft, tokens, latencies, error, full_response = await stream_processor(response, request_start, config)
                 metric['response'] = full_response
                 
